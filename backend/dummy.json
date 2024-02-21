@@ -1,0 +1,57 @@
+{
+  "products": [
+    { "name": "macbook", "price": 1200 },
+    { "name": "Iphone", "price": 1000 }
+  ],
+  "users": [
+    { "name": "Khosoo", "age": 22 },
+    { "name": "Baganaa", "age": 25 },
+    { "name": "Bold", "age": 32 },
+    { "name": "Bataa", "age": "32" },
+    {
+      "add-user": [
+        { "name": "iphone", "price": 2000 },
+        { "name": "samsung", "price": 100 },
+        { "name": "sony", "price": 15000 }
+      ],
+      "users": [
+        { "name": "khosoo", "age": 27 },
+        { "name": "baganaa", "age": 29 }
+      ]
+    },
+    {
+      "add-user": [
+        { "name": "iphone", "price": 2000 },
+        { "name": "samsung", "price": 100 },
+        { "name": "sony", "price": 15000 }
+      ],
+      "users": [
+        { "name": "khosoo", "age": 27 },
+        { "name": "baganaa", "age": 29 }
+      ]
+    },
+    { "name": "brtbr", "age": "" },
+    { "name": "brtbr", "age": "uyuk" },
+    { "name": "brtbr", "age": "uyuk" },
+    { "name": "brtbr", "age": "uyuk" },
+    { "name": "brtbr", "age": "uyuk" },
+    { "name": "efe", "age": "fe" },
+    { "name": "fef", "age": "23" },
+    { "name": "fef", "age": "23" },
+    { "name": "fef", "age": "23" },
+    { "name": "y6y", "age": "0" },
+    { "name": "y6y", "age": "0" },
+    { "name": "ww", "age": "2" },
+    {
+      "add-user": [
+        { "name": "iphone", "price": 2000 },
+        { "name": "samsung", "price": 33 },
+        { "name": "sony", "price": 15000 }
+      ],
+      "users": [
+        { "name": "khosoo", "age": 27 },
+        { "name": "baganaa", "age": 29 }
+      ]
+    }
+  ]
+}
