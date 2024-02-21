@@ -1,6 +1,3 @@
-import { data } from "autoprefixer";
-import { useState } from "react";
-
 export default function AddUser() {
   const BE_URL = "http://localhost:3001/add-user";
 
@@ -9,6 +6,7 @@ export default function AddUser() {
     const data = {
       name: e.target.username.value,
       age: e.target.userage.value,
+      mail: e.target.usermail.value,
     };
 
     const options = {
@@ -48,7 +46,16 @@ export default function AddUser() {
               name="userage"
             />
           </div>
-
+          <div className="flex gap-[48px]">
+            <label htmlFor="mail">Email:</label>
+            <input
+              type="text"
+              placeholder="enter user email"
+              id="usermail"
+              className="border text-center  rounded-[5px] p-[2px]"
+              name="usermail"
+            />
+          </div>
           <input
             className="flex justify-center items-center rounded-[5px] border bg-[#9494d2] w-[100px]"
             type="submit"

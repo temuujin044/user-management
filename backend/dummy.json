@@ -35,13 +35,6 @@
     { "name": "brtbr", "age": "uyuk" },
     { "name": "brtbr", "age": "uyuk" },
     { "name": "brtbr", "age": "uyuk" },
-    { "name": "efe", "age": "fe" },
-    { "name": "fef", "age": "23" },
-    { "name": "fef", "age": "23" },
-    { "name": "fef", "age": "23" },
-    { "name": "y6y", "age": "0" },
-    { "name": "y6y", "age": "0" },
-    { "name": "ww", "age": "2" },
     {
       "add-user": [
         { "name": "iphone", "price": 2000 },
@@ -52,6 +45,11 @@
         { "name": "khosoo", "age": 27 },
         { "name": "baganaa", "age": 29 }
       ]
-    }
+    },
+    { "name": "fr", "age": "4" },
+    { "name": "fr", "age": "4" },
+    { "name": "fr", "age": "4", "mail": "sxs" },
+    { "username": "", "userage": "", "usermail": "" },
+    { "name": "34", "age": "34", "mail": "34" }
   ]
 }
