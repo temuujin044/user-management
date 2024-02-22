@@ -1,12 +1,16 @@
+import { nanoid } from "nanoid";
+
 export default function AddUser() {
   const BE_URL = "http://localhost:3001/add-user";
+  const newID = nanoid();
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const data = {
       name: e.target.username.value,
-      age: e.target.userage.value,
+      age: parseInt(e.target.userage.value),
       mail: e.target.usermail.value,
+      id: newID,
     };
 
     const options = {
@@ -62,6 +66,22 @@ export default function AddUser() {
             name="Add User"
           />
         </div>
+        {/* <div className="flex w-[350px] h-[200px] rounded-[12px] gap-5 border flex-col p-4 justify-center">
+          {props.data?.allData.users.map((user, index) => (
+            <div className="flex gap-2" key={index}>
+              <div className="flex gap-4">
+                <span>{user.name}</span>
+                <span>{user.age} </span>
+              </div>
+              <button className="flex justify-center items-center rounded-[50%] border bg-[#9494d2] w-[30px]">
+                X
+              </button>
+              <button className="flex justify-center items-center rounded-[5px] border bg-[#9494d2] w-[50px]">
+                Edit
+              </button>
+            </div>
+          ))}
+        </div> */}
       </main>
     </form>
   );
