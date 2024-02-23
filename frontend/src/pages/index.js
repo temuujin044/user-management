@@ -5,13 +5,14 @@ export default function AddUser() {
   const newID = nanoid();
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     const data = {
       name: e.target.username.value,
-      age: parseInt(e.target.userage.value),
+      age: Number(e.target.userage.value),
       mail: e.target.usermail.value,
       id: newID,
     };
+    console.log(data);
 
     const options = {
       method: "POST",

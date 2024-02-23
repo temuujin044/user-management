@@ -11,7 +11,11 @@ app.use(cors());
 
 const fs = require("fs");
 const { error } = require("console");
-const { uptime } = require("process");
+
+app.get("/users", (req, res) => {
+  res.type = "application/json";
+  res.send = { allData: allData };
+});
 
 app.post("/add-user", (req, res) => {
   const newUser = req.body;
@@ -41,24 +45,6 @@ app.post("/add-user", (req, res) => {
 app.post("/delete-user", (req, res) => {
   const deleteUser = req.body;
 
-  fs.readFile("dummy.json", (error, data) => {
-    console.log(data);
-    if (error) {
-      console.log("Error in reading file");
-    } else {
-      const jsonFile = JSON.parse(data.toString());
-      jsonFile.users.push(deleteUser);
-      fs.writeFile("dummy.json", JSON.stringify(jsonFile), (err) => {
-        if (err) {
-          console.log(err);
-          res.send("error happened");
-        } else {
-          console.log("success");
-          res.send("User added successfully");
-        }
-      });
-    }
-  });
   res.status(200);
   res.send("User added successfully");
 });
